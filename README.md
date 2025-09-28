@@ -61,8 +61,7 @@ The <strong>Next-Gen RAG News Verification Engine</strong> is a web-based applic
 <h2 style="color:#1a73e8;">Installation</h2>
 
 <pre>
-git clone https://github.com/yourusername/next-gen-news-verifier.git
-cd next-gen-news-verifier
+git clone https://github.com/Bibek257/Next-Gen-Search-Engine.git
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
@@ -117,7 +116,7 @@ http://127.0.0.1:5000/
 <h2 style="color:#ea4335;">Screenshots</h2>
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400?text=Glass+Search+UI" alt="Glass Search UI" />
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fsearch-bar-design-elements-website-ui-mobile-apps-search-browser-with-glass-morphism-effect_31080109.htm&psig=AOvVaw1iqL9lSbGID5mRZFeA36r_&ust=1759165939266000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCLDr8vr5-48DFQAAAAAdAAAAABAE" alt="Glass Search UI" />
 </div>
 
 ---
