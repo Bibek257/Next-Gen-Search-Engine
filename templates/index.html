@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next-Gen Search Engine</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column align-items-center justify-content-center min-vh-100"
+    >
+      <h1 class="text-center mb-4 text-light">Next-Gen Search Engine</h1>
+      <form method="POST" class="w-100 search-form">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            name="query"
+            class="form-control form-control-lg"
+            placeholder="Ask anything..."
+            required
+          />
+          <button class="btn btn-primary btn-lg" type="submit">Search</button>
+        </div>
+      </form>
+
+      {% if answer %}
+      <div class="glass-card mt-4 p-4 w-100">
+        <h3 class="text-light">Answer</h3>
+        <p class="text-white">{{ answer }}</p>
+        {% if sources %}
+        <h5 class="text-light mt-3">Sources:</h5>
+        <ul class="text-white">
+          {% for src in sources.split('\n') %}
+          <li>{{ src }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
