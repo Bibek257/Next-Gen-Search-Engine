@@ -111,12 +111,6 @@ http://127.0.0.1:5000/
 <li><strong>Output Display:</strong> Answer, sources, and full articles displayed in glassmorphic UI.</li>
 </ol>
 
----
-
-<h2 style="color:#ea4335;">Screenshots</h2>
-
----
-
 <h2 style="color:#1a73e8;">Contributing</h2>
 
 <p>Contributions are welcome! You can:</p>
